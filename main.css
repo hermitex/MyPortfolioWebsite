@@ -415,6 +415,9 @@ section .boxes div {
   .profile-grid .profile-about .skills {
     flex-direction: column;
   }
+  .profile-top .bg-primary div {
+    width: 100%;
+  }
   .post {
     grid-template-columns: 1fr;
   }
