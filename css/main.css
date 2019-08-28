@@ -1,0 +1,442 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.text-secondary {
+  color: #eece1a;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:hover {
+  color: #17a2b8;
+}
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+}
+
+section h1.lg-heading,
+section h2.lg-heading,
+section h3.lg-heading {
+  font-size: 3rem;
+}
+
+section h1.sm-heading,
+section h2.sm-heading,
+section h3.sm-heading {
+  margin-bottom: 2rem;
+  padding: 0.2rem 1rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/*NavBar*/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 2rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  border-bottom: solid 1px #17a2b8;
+  opacity: 0.9;
+}
+
+.navbar a {
+  color: #ffffff;
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+}
+.navbar a:hover {
+  color: #17a2b8;
+}
+.navbar ul {
+  display: flex;
+}
+
+.bg-dark {
+  background: #343a40;
+}
+
+.landing {
+  position: relative;
+  background: url("https://res.cloudinary.com/hng-pre-internship/image/upload/v1566556813/code-coding-connection-943096_yrmroq.jpg")
+    no-repeat center center/cover;
+  height: 100vh;
+}
+
+.landing-inner {
+  color: #ffffff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/*Text styles*/
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.large {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.text-primary {
+  color: #17a2b8;
+}
+.round-img {
+  border-radius: 50%;
+}
+.line {
+  height: 1px;
+  background: #cccccc;
+  margin: 1.5rem 0;
+}
+
+section {
+  padding: 4rem;
+  /*height: 100%;*/
+  width: 100%;
+  min-height: calc(100vh-60px);
+}
+
+section #home {
+  overflow: hidden;
+}
+
+section #home {
+  margin-top: 20vh;
+}
+
+.about-info {
+}
+
+.bio {
+  color: #ffffff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/*Contact Page*/
+section .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+}
+section .boxes div {
+  font-size: 2rem;
+  border: 3px #ffffff solid;
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 3rem;
+  transition: transform all 10s ease-out;
+}
+
+.boxes div:hover {
+  padding: 0.5rem 1.5rem;
+  background: #17a2b8;
+  color: #0a0a0a;
+}
+
+.boxes div span {
+  color: #eece1a;
+}
+
+/*Profile Page*/
+
+.profile-grid {
+  display: grid;
+  grid-template-areas: "top top" "about about" "exp edu" "github github";
+  grid-gap: 1rem;
+}
+
+.profile-grid .profile-top {
+  grid-area: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-grid .profile-top img {
+  width: 250px;
+}
+
+.profile-grid .profile-top .icons a {
+  color: #ffffff;
+  margin: 0 0.3rem;
+}
+
+.profile-grid .profile-top .icons a :hover {
+  color: #333333;
+}
+
+.profile-grid .profile-about {
+  grid-area: about;
+  text-align: center;
+}
+
+.profile-grid .profile-about .skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-grid .profile-exp {
+  grid-area: exp;
+}
+
+.profile-grid .profile-edu {
+  grid-area: edu;
+}
+
+.profile-grid .profile-exp > div,
+.profile-grid .profile-edu > div {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: #17a2b8 1px dotted;
+}
+
+.profile-grid:last-child {
+  border: none;
+}
+
+.profile-grid p {
+  margin: 0.5rem 0;
+}
+
+.profile-github {
+  grid-area: github;
+}
+.profile-github .repo {
+  display: flex;
+}
+.profile-github .repo > div:first-child {
+  float: 7;
+  flex-basis: 70%;
+}
+
+.profile-github .repo > div:last-child {
+  float: 3;
+  flex-basis: 20%;
+}
+
+/*Margin & Padding*/
+
+/*all around margin*/
+.m-1 {
+  margin: 1rem;
+}
+/*vertical margin*/
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
+.p-2 {
+  padding: 2rem;
+}
+
+/*all around padding*/
+.p-3 {
+  padding: 3rem;
+}
+/*vertical padding*/
+.py-4 {
+  padding: 4rem 0;
+}
+
+/*Badges*/
+.badge {
+  font-size: 0.8rem;
+  padding: 0.1rem;
+  text-align: center;
+  margin: 0.3rem;
+  background: #f4f4f4;
+  color: #333333;
+}
+
+.badge.badge-primary {
+  background: #17a2b8;
+}
+
+.badge.badge-dark {
+  background: #343a40;
+}
+
+.badge.badge-success {
+  background: #28a745;
+}
+
+.badge.badge-danger {
+  background: #dc3545;
+}
+.bg-primary {
+  background: #17a2b8;
+  color: #ffffff;
+}
+.bg-white {
+  background-color: #fff;
+  color: #333;
+  border: #17a2b8 1.5px solid;
+}
+.bg-light {
+  background-color: #f4f4f4;
+  color: #333;
+  border: #cccccc 1px solid;
+}
+.dark-overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  text-align: left;
+}
+
+.table th {
+  background: #f4f4f4;
+}
+
+@media (max-width: 700px) {
+  .hide-sm {
+    display: none;
+  }
+
+  .container {
+    margin-top: 8rem;
+  }
+
+  /*Text Styles*/
+  .x-large {
+    font-size: 3rem;
+  }
+  .x-large {
+    font-size: 2rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+
+  /*NavBar*/
+  .navbar {
+    display: block;
+    text-align: center;
+  }
+  .navbar ul {
+    text-align: center;
+    justify-content: center;
+  }
+  .navbar h1 {
+    margin-bottom: 1rem;
+  }
+  .dash-buttons a {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  /*profiles*/
+  .profile {
+    grid-template-columns: 1fr;
+
+    text-align: center;
+  }
+
+  .profile ul {
+    display: none;
+  }
+  .profile-grid {
+    grid-template-areas:
+      "top"
+      "about"
+      "exp"
+      "edu"
+      "github";
+  }
+  .profile-grid .profile-about .skills {
+    flex-direction: column;
+  }
+  .post {
+    grid-template-columns: 1fr;
+  }
+  .post a,
+  .post button {
+    padding: 0.3rem 0.4rem;
+  }
+}
+
+/*Work/Projects*/
+
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.projects img {
+  width: 100%;
+  border: 3px #ffffff solid;
+}
+.projects img:hover {
+  opacity: 0.5;
+  border-color: #eece1a;
+  transition: transform all 2s ease-out;
+}
