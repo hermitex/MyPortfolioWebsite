@@ -17,6 +17,7 @@ body {
   font-size: 1.3rem;
   color: #36cee6;
 }
+
 .overlay-inner {
   height: 100vh;
   width: 100%;
@@ -94,6 +95,7 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   margin-bottom: 5rem;
+  margin-top: 3rem;
 }
 .btn-danger {
   display: none;
