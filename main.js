@@ -1,17 +1,3 @@
-/*< !--TASK UPDATES
-INDIVIDUAL TASK
-    - Update your CV page with a contact form.
-- The contact form should have name, email, title and message
-    - The contact form should be validated to check if the user:
-* Enters the correct format of data for each field
-    * Enters at least 4 characters in the name field
-        * Enters at least 20 characters for the message
-            - Host your contact form on free hosting, preferably, github pages...but any host is fine.
-Contact your team lead for submission details. @channel-->*/
-
-
-//get the button
-
 let dataBtn = document.querySelector(".btn-primary");
 
 
