@@ -382,6 +382,12 @@ section .boxes div {
     display: block;
     text-align: center;
   }
+  .navbar h1[hide] {
+    display: none;
+    height: 0;
+    overflow: hidden;
+    top: 0;
+  }
   .navbar ul {
     text-align: center;
     justify-content: center;
