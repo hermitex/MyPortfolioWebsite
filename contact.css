@@ -12,6 +12,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
 }
+
 .body-color {
   font-size: 1.3rem;
   color: #36cee6;
