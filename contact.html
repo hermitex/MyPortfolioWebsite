@@ -5,112 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="main.css">
-
-    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact</title>
 </head>
 
 <body>
+    <main>
+        <div class="container p-y">
+            <div class="overlay-inner">
+                <div class="intro">
+                    <h2 class="lead p-y">
+                        Let us get in <span class="yellow">touch</span>
+                    </h2>
+                    <p class="content p-r">
+                        Let us meet for a cup of coffee, or leave me a message<span class="body-color">...</span>
+                    </p>
+                </div>
+                <div class="form">
+                    <form action="#">
+                        <div class="data">
+                            <label for="name">
+                                <input class="input p-y p-r" id="btn" type="text" id="name" placeholder="Name Surname">
+                            </label>
+                            <button class="btn-danger alert">Enter a Valid Name</button>
+                            <label for="email">
+                                <input class="input p-y p-r" id="btn" type="text" id="email" placeholder="Email">
+                            </label>
+                            <button class="btn-danger alert">Enter a Valid Email</button>
+                            <label for="title">
+                                <input class="input p-y p-r" id="btn" type="text" id="titlle" placeholder="Title">
+                            </label>
+                            <button class="btn-danger alert">Enter a Valid Title</button>
+                        </div>
+                        <label for="text">
+                            <textarea class="input msg p-r" name="message" id="message" cols="30" rows="10"
+                                placeholder="Your Message"></textarea>
+                        </label>
 
-    <header>
-        <div class="menu-btn">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-        </div>
-
-        <nav class="navbar bg-dark">
-            <h1>
-                <a href="index.html">
-                    MAIRURA
-                </a>
-            </h1>
-            <div class="menu-branding">
-                <div class="portrait"></div>
+                    </form>
+                </div>
+                <button btn-data class="btn-primary p-1 m-y">Submit</button>
             </div>
-
-            <ul class="menu-nav">
-
-                <li class="nav-item current">
-                    <a href="index.html" class="nav-link">
-                        Home
-                    </a>
-
-                </li>
-
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">
-                        About Me
-                    </a>
-
-                </li>
-
-                <li class="nav-item">
-                    <a href="work.html" class="nav-link">
-                        My Work
-                    </a>
-
-                </li>
-
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">
-                        Contact
-                    </a>
-
-                </li>
-            </ul>
-        </nav>
-
-    </header>
-    <section id="contact" id="home">
-
-        <h1 class="lg-heading">
-            Contact
-            <span class="text-secondary">Me</span>
-        </h1>
-        <h2 class="sm-heading">
-            This is how we can get in touch...
-        </h2>
-        <div class="boxes">
-            <div>
-                <span class="text-secondary">
-                    Email:
-                </span>
-                tiberiusmairura90@gmail.com
-            </div>
-
-            <div>
-                <span class="text-secondary">
-                    Phone:
-                </span>
-                +254 797 165 741
-            </div>
-
-            <div>
-                <span class="text-secondary">
-                    Address:
-                </span>
-                Juja Road, Kenya
-            </div>
-        </div>
-        <div class="icons">
-            <a href="#!">
-                <i style="font-size: 3rem;" class="fab fa-linkedin"></i>
-            </a>
-
-            <a href="#!">
-                <i style="font-size: 3rem;" class="fab fa-github"></i>
-            </a>
-
 
         </div>
-    </section>
-
-    <footer id="main-footer">
-        Copyright &copy; 2019
-    </footer>
-
-
+    </main>
+    <script src="main.js"></script>
 </body>
 
 </html>
