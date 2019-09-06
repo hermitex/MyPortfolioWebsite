@@ -502,6 +502,11 @@ section .boxes div {
   .project4 {
     grid-area: project4;
   }
+  .round-img {
+    border-radius: 50%;
+    height: 15rem;
+    width: 10rem;
+  }
 }
 @media screen and (max-width: 500px) {
   /*NavBar*/
