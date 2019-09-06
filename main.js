@@ -2,10 +2,10 @@ let dataBtn = document.querySelector(".btn-primary");
 
 
 dataBtn.addEventListener("click", () => {
-
-    validateUser()
+    checkMessageLength();
+    //  validateUser();
 });
-
+/*
 //Validate payment
 const validateUser = () => {
     userName();
@@ -40,9 +40,27 @@ const validator = (sibling, isValid) => {
         sibling.classList.add("error")
     }
 }
+*/
+
+//Message length
+let checkMessageLength = () => {
+    let message = document.querySelector(".msg");
+    let isLong = 20;
+
+    if (message.textContent.length >= isLong) {
+        console.log("long");
+        deleteErrorMessage(message);
+    } else if (message.textContent.length <= isLong) {
+        console.log("short");
+    }
+};
 
 
+let deleteErrorMessage = (element) => {
 
+    let errorPara = document.createElement("p");
+    errorPara.textContent = ("Your Message should be at least twenty charaters long...");
+    errorPara.classList.add("fail");
+    element.insertAdjacentHTML("afterend", errorPara.textContent);
 
-
-
+};
