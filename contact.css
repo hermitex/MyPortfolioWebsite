@@ -90,7 +90,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  margin-top: 3.37rem;
+  margin-top: 3.3rem !important;
 }
 .btn-danger {
   display: none;
