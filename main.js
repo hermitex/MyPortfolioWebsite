@@ -2,13 +2,14 @@ let dataBtn = document.querySelector(".btn-primary");
 let userName = document.querySelector(".name");
 let userEmail = document.querySelector("#email");
 let userTitle = document.querySelector("#title");
+let userMsg = document.querySelector("#message");
 let wrongName = document.querySelector(".wrong-name");
 let wrongEmail = document.querySelector(".wrong-email");
 let wrongTitle = document.querySelector(".wrong-title");
-console.log(wrongName);
+let wrongMessage = document.querySelector(".wrong-msg");
+
 
 dataBtn.addEventListener("click", () => {
-    // checkMessageLength();
     validateUser();
 });
 
@@ -17,6 +18,7 @@ const validateUser = () => {
     ValidateUserName();
     validateUserEmail();
     ValidateUserTitle();
+    validateUserMessage();
 };
 
 //Validate Name
@@ -38,23 +40,25 @@ const validateUserEmail = () => {
 }
 
 
-//Validate Name
+//Validate Title
 const ValidateUserTitle = () => {
-    let nameValue = document.querySelector(".title").value;
-    if (nameValue < 4) {
-        validator(wrongEmail, isValid);
-        return isValid;
-    } else {
-        console.log("hello1")
-        isValid = true;
-        validator(wrongEmail, isValid);
-        return isValid;
-    }
-
+    let titleValue = document.querySelector(".title").value;
+    const regX = /^[a-zZ-Z]{5,}$/;
+    let isValid = regX.test(String(titleValue).toLowerCase());
+    validator(wrongTitle, isValid);
+    return isValid;
 }
+//Validate User Message
+let validateUserMessage = () => {
+    let messageValue = document.querySelector("#message").value;
+    const regX = /^[a-zZ-Z]{20,}$/;
+    let isValid = regX.test(String(messageValue).toLowerCase());
+    validator(wrongMessage, isValid);
+    return isValid;
+};
+
 
 //Flag if invalid
-
 const validator = (sibling, isValid) => {
     if (isValid) {
         sibling.classList.remove("error")
@@ -64,27 +68,4 @@ const validator = (sibling, isValid) => {
     }
 }
 
-/*
-//Message length
-let checkMessageLength = () => {
-    let message = document.querySelector(".msg");
-    let isLong = 20;
 
-    if (message.textContent.length >= isLong) {
-        console.log("long");
-        deleteErrorMessage(message);
-    } else if (message.textContent.length <= isLong) {
-        console.log("short");
-    }
-};
-
-
-let deleteErrorMessage = (element) => {
-
-    let errorPara = document.createElement("p");
-    errorPara.textContent = ("Your Message should be at least twenty charaters long...");
-    errorPara.classList.add("fail");
-    element.insertAdjacentHTML("afterend", errorPara.textContent);
-
-};
-*/
