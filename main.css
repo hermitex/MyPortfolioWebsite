@@ -551,3 +551,17 @@ section .boxes div {
     font-size: 0.5rem;
   }
 }
+
+@media screen and (min-width: 768px) {
+  section {
+    overflow-x: hidden;
+    display: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 2.5rem !important;
+    padding: 4rem;
+  }
+}
