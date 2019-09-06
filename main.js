@@ -51,7 +51,7 @@ const ValidateUserTitle = () => {
 //Validate User Message
 let validateUserMessage = () => {
     let messageValue = document.querySelector("#message").value;
-    const regX = /^[a-zZ-Z]{20,}$/;
+    const regX = /^[a-zZ-Z]{200,}$/;
     let isValid = regX.test(String(messageValue).toLowerCase());
     validator(wrongMessage, isValid);
     return isValid;
