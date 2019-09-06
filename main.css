@@ -89,6 +89,8 @@ section h3.sm-heading {
 }
 
 .landing {
+  overflow-x: hidden;
+
   position: relative;
   background: url("https://res.cloudinary.com/hng-pre-internship/image/upload/v1567510718/IMG_20190617_132752_760_deezfh.jpg")
     no-repeat center center/cover;
@@ -96,6 +98,7 @@ section h3.sm-heading {
 }
 
 .landing-inner {
+  overflow-x: hidden;
   color: #ffffff;
   height: 100%;
   display: flex;
@@ -393,7 +396,9 @@ section .boxes div {
   .hide-sm {
     display: none;
   }
-
+  .landing {
+    overflow-x: hidden;
+  }
   .container {
     display: flex;
     text-align: center;
