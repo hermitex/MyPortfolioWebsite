@@ -94,9 +94,10 @@
 }
 .btn-danger {
   display: none;
+  transition: all 1s ease-out;
 }
 .error {
-  transition: all 0.3s ease-out;
+  transition: all 1s ease-out;
   display: block;
   background: red;
   color: #ffffff;
@@ -107,6 +108,7 @@
   padding: 0.35rem;
   color: #36cee6 !important;
   background: none;
+  transition: all 1s ease-out;
 }
 .alert {
   margin-top: 0;
@@ -114,6 +116,7 @@
   outline: none;
   cursor: pointer;
   border-radius: 10px;
+  transition: all 1s ease-out;
 }
 
 .btn-primary {
@@ -121,10 +124,4 @@
   margin: auto;
   margin-top: 0.5rem;
   background: #17a2b8;
-}
-.success {
-  color: green;
-}
-.fail {
-  color: red;
 }
