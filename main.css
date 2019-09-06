@@ -363,6 +363,9 @@ section .boxes div {
   }
 
   .container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
     margin-top: 8rem;
   }
 
@@ -379,8 +382,8 @@ section .boxes div {
 
   /*NavBar*/
   .navbar {
-    display: block;
     text-align: center;
+    justify-content: center;
     width: 100%;
   }
   .navbar h1[hide] {
@@ -390,12 +393,12 @@ section .boxes div {
     top: 0;
   }
   .navbar ul {
+    width: 100%;
+    display: flex;
     text-align: center;
     justify-content: center;
   }
-  .navbar h1 {
-    margin-bottom: 1rem;
-  }
+
   .dash-buttons a {
     display: block;
     width: 100%;
@@ -404,7 +407,8 @@ section .boxes div {
   /*profiles*/
   .profile {
     grid-template-columns: 1fr;
-
+    text-align: center;
+    justify-content: center;
     text-align: center;
   }
 
@@ -421,6 +425,8 @@ section .boxes div {
   }
   .profile-grid .profile-about .skills {
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
   }
   .profile-top .bg-primary div {
     width: 100%;
@@ -431,6 +437,17 @@ section .boxes div {
   .post a,
   .post button {
     padding: 0.3rem 0.4rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  /*NavBar*/
+  .navbar {
+    font-size: 0.7rem;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
