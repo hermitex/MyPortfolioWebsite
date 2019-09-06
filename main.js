@@ -1,33 +1,56 @@
 let dataBtn = document.querySelector(".btn-primary");
-
+let userName = document.querySelector(".name");
+let userEmail = document.querySelector("#email");
+let userTitle = document.querySelector("#title");
+let wrongName = document.querySelector(".wrong-name");
+let wrongEmail = document.querySelector(".wrong-email");
+let wrongTitle = document.querySelector(".wrong-title");
+console.log(wrongName);
 
 dataBtn.addEventListener("click", () => {
-    checkMessageLength();
-    //  validateUser();
+    // checkMessageLength();
+    validateUser();
 });
-/*
+
 //Validate payment
 const validateUser = () => {
-    userName();
+    ValidateUserName();
+    validateUserEmail();
+    ValidateUserTitle();
 };
-let input = document.querySelectorAll("#btn");
-input.forEach(element => {
-    let currentInput = element;
-    currentInput.addEventListener("blur", (e) => {
-        let value = currentInput.value;
-        let thisSibling = e.target.parentNode.nextElementSibling;
-        userName(value, thisSibling)
-
-    });
-});
 
 //Validate Name
-const userName = (currentValue, sibling) => {
+const ValidateUserName = () => {
+    let nameValue = document.querySelector(".name").value;
     const regX = /^[a-zA-Z]{3,}\s[a-zA-Z]{3,}$/;
-    let isValid = regX.test(currentValue);
-    console.log(sibling);
-    validator(sibling, isValid);
+    let isValid = regX.test(nameValue);
+    validator(wrongName, isValid);
     return isValid;
+}
+
+//Validate Email
+const validateUserEmail = () => {
+    let emailValue = document.querySelector(".email").value;
+    const regX = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    let isValid = regX.test(String(emailValue).toLowerCase());
+    validator(wrongEmail, isValid);
+    return isValid;
+}
+
+
+//Validate Name
+const ValidateUserTitle = () => {
+    let nameValue = document.querySelector(".title").value;
+    if (nameValue < 4) {
+        validator(wrongEmail, isValid);
+        return isValid;
+    } else {
+        console.log("hello1")
+        isValid = true;
+        validator(wrongEmail, isValid);
+        return isValid;
+    }
+
 }
 
 //Flag if invalid
@@ -40,8 +63,8 @@ const validator = (sibling, isValid) => {
         sibling.classList.add("error")
     }
 }
-*/
 
+/*
 //Message length
 let checkMessageLength = () => {
     let message = document.querySelector(".msg");
@@ -64,3 +87,4 @@ let deleteErrorMessage = (element) => {
     element.insertAdjacentHTML("afterend", errorPara.textContent);
 
 };
+*/
