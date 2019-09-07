@@ -2,12 +2,18 @@ let dataBtn = document.querySelector(".btn-primary");
 let userName = document.querySelector(".name");
 let userEmail = document.querySelector("#email");
 let userTitle = document.querySelector("#title");
-let userMsg = document.querySelector("#message");
+let userMsg = document.querySelector("#msg");
 let wrongName = document.querySelector(".wrong-name");
 let wrongEmail = document.querySelector(".wrong-email");
 let wrongTitle = document.querySelector(".wrong-title");
 let wrongMessage = document.querySelector(".wrong-msg");
+let alertBtn = document.querySelectorAll(".alert");
 
+/*alertBtn.forEach(button => {
+    button.addEventListener("mouseover", (e) => {
+        e.target.style.display = "none";
+    });
+});*/
 
 dataBtn.addEventListener("click", () => {
     validateUser();
@@ -50,8 +56,8 @@ const ValidateUserTitle = () => {
 }
 //Validate User Message
 let validateUserMessage = () => {
-    let messageValue = document.querySelector("#message").value;
-    const regX = /^[a-zZ-Z]{200,}$/;
+    let messageValue = document.querySelector("#msg").value;
+    const regX = /^[a-zZ-Z]{20,}$/;
     let isValid = regX.test(String(messageValue).toLowerCase());
     validator(wrongMessage, isValid);
     return isValid;
