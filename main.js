@@ -74,4 +74,12 @@ const validator = (sibling, isValid) => {
     }
 }
 
+const result = document.getElementById('result');
 
+let approval = "Not approved";
+
+const getApproval = () => {
+    setTimeout(() => {
+        approval = "Approved!";
+    }, 500)
+};
