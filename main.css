@@ -92,7 +92,7 @@ section h3.sm-heading {
   overflow-x: hidden;
   overflow-y: hidden;
   position: relative;
-  background: url("https://res.cloudinary.com/hng-pre-internship/image/upload/v1567510718/IMG_20190617_132752_760_deezfh.jpg")
+  background: url("./images/landing-bg.jpg")
     no-repeat center center/cover;
   height: 100vh;
 }
@@ -157,8 +157,6 @@ section #home {
   margin-top: 20vh;
 }
 
-.about-info {
-}
 
 .bio {
   color: #ffffff;
@@ -216,7 +214,11 @@ section .boxes div {
 }
 
 .profile-grid .profile-top img {
-  width: 250px;
+  width: 5rem;
+  border-radius: 50%;
+}
+.avatar-div{
+  border-radius: 50%;
 }
 
 .profile-grid .profile-top .icons a {
@@ -381,6 +383,12 @@ section .boxes div {
     "project1 project2"
     "project3 project4";
   gap: 0.7rem;
+}
+.projects .item{
+
+ margin: auto;
+ margin-left: 0.5rem;
+ margin-right: 0.5rem;
 }
 
 .projects img {

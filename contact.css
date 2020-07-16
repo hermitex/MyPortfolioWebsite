@@ -127,3 +127,8 @@
   margin-top: 0.5rem;
   background: #17a2b8;
 }
+
+#main-footer{
+  display: absolute;
+  bottom: 0;
+}
