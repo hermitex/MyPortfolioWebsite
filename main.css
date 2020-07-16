@@ -89,22 +89,21 @@ section h3.sm-heading {
 }
 
 .landing {
-  overflow-x: hidden;
-  overflow-y: hidden;
+
   position: relative;
   background: url("./images/landing-bg.jpg")
     no-repeat center center/cover;
   height: 100vh;
+  overflow: hidden !important;
 }
 
 .landing-inner {
-  overflow-y: hidden;
-  overflow-x: hidden;
+  overflow: hidden !important;
   color: #ffffff;
   height: 100%;
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
   margin: auto;
   align-items: center;
   justify-content: center;
@@ -177,17 +176,18 @@ section .boxes {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  margin: 1rem;
 }
 section .boxes div {
-  font-size: 2rem;
+  font-size: 1.3rem;
   border: 3px #ffffff solid;
-  padding: 1.5rem 2.5rem;
+  padding: 0.5rem;
   margin-bottom: 3rem;
-  transition: transform all 10s ease-out;
+  transition:  all 1s ease-out;
 }
 
 .boxes div:hover {
-  padding: 0.5rem 1.5rem;
+ 
   background: #17a2b8;
   color: #0a0a0a;
 }
